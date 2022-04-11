@@ -1,0 +1,116 @@
+.wrapper{
+    @media (min-width:950px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+
+.imgWrapper,.imgWrapper2,.imgWrapper3,.imgWrapper4{
+    position: relative;
+    z-index: 10;
+    max-width: 576px;
+
+    img{
+        width: 100%;
+    }
+}
+.imgWrapper::after, .imgWrapper2::after, .imgWrapper3::after, .imgWrapper4::after{
+    content: "";
+    background-color: var(--blue);
+    z-index: -1;
+    transform: translateX(-80%) translateY(25%);
+    width: 100%;
+    height: 80%;
+    // height: inherit;
+    position: absolute;
+}
+
+.topLine{
+}
+
+.contentLeft, .contentRight{
+    margin-top: 4rem;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    
+    
+    @media (min-width:576px) {
+        max-width: 500px;
+        margin: 4rem auto;
+        text-align: left;
+        // padding-left: 2rem;
+    }
+    
+
+   .desc{
+       margin-top: 2rem;
+       color: var(--grey);
+       line-height: 1.5;
+   }
+}
+
+.imgWrapper{
+    @media (min-width:950px) {
+        order: 1;
+    }
+}
+
+.imgWrapper::after{
+    border-bottom-left-radius: 50px;
+    width: 100%;
+}
+
+.imgWrapper2::after{
+    transform: translateX(-120%) translateY(17%);
+    border-bottom-right-radius: 50px;
+    height: 96%;
+    width: 130%;
+}
+.imgWrapper3::after{
+    transform: translateX(-129%) translateY(15%);
+    border-bottom-right-radius: 50px;
+    height: 90%;
+    width: 130%;
+}
+.imgWrapper4::after{
+    transform: translateX(-121%) translateY(16%);
+    border-bottom-right-radius: 50px;
+    height: 93%;
+    width: 140%;
+}
+
+.imgWrapper{
+    max-width: 700px;
+}
+
+.btns{
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+
+    @media (min-width:600px) {
+        display: flex;
+        justify-content: start;
+
+        button{
+            margin-right: 1rem;
+        }
+    }
+}
+
+.contentRight{
+    @media (min-width:950px) {
+        padding-left: 4rem;
+    }
+
+    .btns{
+        @media (max-width:950px) {
+            display: none;
+        }
+    }
+}

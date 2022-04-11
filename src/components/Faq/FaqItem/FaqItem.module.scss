@@ -1,0 +1,40 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    width: 100%;
+    border-bottom: 1px solid #DFDFE7;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    text-align: left;
+    
+
+    
+
+    .top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .question{
+            margin-right: 1rem;
+            font-weight: 500;
+            // transition: .2s ease-in-out;
+        }
+
+        .arrowActive{
+            transform: rotate(180deg);
+        }
+        &:hover{
+            .question{
+                color: var(--red);
+            }
+        }
+
+    }
+    .answer{
+        margin-top: .5rem;
+        color: var(--grey);
+        line-height: 1.5;
+    }
+}

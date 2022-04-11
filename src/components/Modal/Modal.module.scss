@@ -1,0 +1,88 @@
+
+.modal{
+    position: absolute;
+    top: 10vh;
+    z-index: 100;
+    justify-content: space-between;
+    left: 0;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 1.5rem;
+    background-color: #252b46;
+    color: white;
+    width: 100%;
+    height: 90vh;
+    .wrapper{
+        width: 100%;
+        .linkItem{
+            border-top: .5px solid var(--grey);
+            width: 100%;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        
+        .linkItem:nth-child(3){
+                border-bottom: .5px solid var(--grey);
+        }
+        
+
+        .modalButton{
+            border-radius: 5px;
+            width: 100%;
+            font-weight: bold;
+            letter-spacing: 2;
+            text-transform: uppercase;
+            border: 2px solid #fff;
+            background-color: transparent;
+            color: #fff;
+            cursor: pointer;
+            margin-top: 1.5rem;
+            padding: 1rem;
+        }
+    }
+    .socialMedia{
+        padding: 2rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 60%;
+    }
+}
+
+@keyframes fade-in{
+    0%{
+        transform: translateY(0);
+        
+    }
+    100%{
+        transform: translateY(-120%);
+    }
+}
+
+@keyframes fade-out{
+    from{
+        transform: translateY(-120%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+.fadeIn {
+    transform:translateY(-120%)
+}
+
+.fadeOut{
+    transform: translateY(0%);
+    
+    
+}

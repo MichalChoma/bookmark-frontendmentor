@@ -1,0 +1,28 @@
+.wrapper{
+    padding: 1.5rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 550px;
+    
+    
+
+    .desc{
+        color: var(--grey);
+        margin-top: 1.5rem;
+        line-height: 1.5;
+    }
+
+    .itemsWrapper{
+        margin-top: 3rem;
+        width: 100%;
+    }
+
+    button{
+        margin-top: 2.5rem;
+        margin-bottom: 5rem;
+    }
+}

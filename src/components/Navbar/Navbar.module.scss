@@ -1,0 +1,55 @@
+.nav, .navReversed{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    height: 11vh;
+    width: 100%;
+    max-width: 1205px;
+
+    img{
+        cursor: pointer;
+    }
+
+    .hamburger{
+        @media (min-width:901px) {
+            display: none;
+        }
+    }
+
+    .pcMenu{
+       @media (max-width:900px) {
+           display: none;
+       }
+
+       a{
+           text-decoration: none;
+       }
+       display: flex;
+       justify-content: center;
+       align-items: center;
+
+       button{
+           padding: .75rem 1.5rem;
+       }
+
+       .linkItem{
+        color: var(--grey);
+        // margin-top: 2rem;
+        margin-right: 2rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: color .3s ease-in-out;
+
+        &:hover{
+            color: var(--red);
+        }
+    }
+    }
+}
+
+
+.navReversed{
+    background-color: var(--dark);
+    
+}
